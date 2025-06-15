@@ -1,0 +1,49 @@
+{
+  "id": "did:web:dayneis.outlook.com",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:dayneis.outlook.com"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://dayneis.outlook.com/"
+        ]
+      }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/c2ce0286-46e2-4c1b-88f6-615d4706d676"
+        ]
+      }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#0d0f451f2f7b405fbbec484b1634ba35vcSigningKey-ede87",
+      "controller": "did:web:dayneis.outlook.com",
+      "type": "JsonWebKey2020",
+      "publicKeyJwk": {
+        "crv": "P-256",
+        "kty": "EC",
+        "x": "sif63IRV6noO-A2fI1hiK3gxFzJXcRIrLf3RgMfJ3vw",
+        "y": "lrj_WLs1tYa3PHFzr2f-fSG6tF9mwdmfh7hThbeUVCo"
+      }
+    }
+  ],
+  "authentication": [
+    "#0d0f451f2f7b405fbbec484b1634ba35vcSigningKey-ede87"
+  ],
+  "assertionMethod": [
+    "#0d0f451f2f7b405fbbec484b1634ba35vcSigningKey-ede87"
+  ]
+}
+ 
